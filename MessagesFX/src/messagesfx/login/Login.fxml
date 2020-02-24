@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="messagesfx.login.LoginController">
+   <columnConstraints>
+      <ColumnConstraints/>
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints/>
+   </rowConstraints>
+   <AnchorPane prefHeight="220.0" prefWidth="300.0">
+      <children>
+         <Label layoutX="26.0" layoutY="34.0" prefHeight="17.0" prefWidth="77.0" text="User:"/>
+         <Label layoutX="26.0" layoutY="79.0" prefHeight="17.0" prefWidth="77.0" text="Password:"/>
+         <Button fx:id="loginButton" layoutX="92.0" layoutY="143.0" mnemonicParsing="false"
+                 onAction="#loginButtonAction" prefHeight="27.0" prefWidth="116.0" text="Login"/>
+         <Hyperlink fx:id="createAccountHyperlink" layoutX="73.0" layoutY="181.0" onAction="#createAccountAction"
+                    text="I don't have an account yet"/>
+         <Label fx:id="loginErrorLabel" layoutX="26.0" layoutY="110.0" prefHeight="17.0" prefWidth="249.0"
+                textFill="#8a0808"/>
+         <PasswordField fx:id="passwordTextField" layoutX="115.0" layoutY="74.0"/>
+         <TextField fx:id="userTextField" layoutX="115.0" layoutY="29.0"/>
+      </children>
+   </AnchorPane>
+</GridPane>
